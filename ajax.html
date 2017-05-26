@@ -1,34 +1,16 @@
-https://mailboxlayer.com/
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Email Validation</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="ajaxFunctions.js"></script>
+    <title>Email</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="ajaxfunctions.js"></script>
   </head>
-  <body>
-    <div class="container">
-      <h2>Email Validation</h2>
-      <br/>
-      <p>Try entering an email to validate it!</p>
-      <div>
-        <div id="zipbox" class="control-group">
-          <label for="Email">Email</Emaill>
-          <input type="text" name="Email" id="zip" placeholder="Type your Email here" />
-        </div>
-      </div>
-      <br />
-      <div>
-        <button class='btn btn-success btn-large' onclick="findZip('zip')">Test Email</button>
-      </div>
-      <br />
-      <div>
-        <div id="place" class=""></div>
-      </div>
-    </div>
-  </body>
+
+<form>
+  <p>Enter an email address:</p>
+  <input id='email'>
+  <button type='submit' id='validate'>Validate!</button>
+</form>
+
+<h2 id='result'></h2>
 </html>
