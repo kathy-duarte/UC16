@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Email</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="ajaxfunctions.js"></script>
-  </head>
-
-<form>
-  <p>Enter an email address:</p>
-  <input id='email'>
-  <button type='submit' id='validate'>Validate!</button>
-</form>
-
-<h2 id='result'></h2>
+<head>
+<script language="javascript" type="text/javascript" src="ajaxfunctions.js"></script>
+<link rel="stylesheet" href="UC16.css">
+</head>
+<body>
+<p>Enter a number and click the button to see if it is a valid phone number</p>
+<input type="text" id="inputNum">
+<p/>
+<input type="button" onclick="CheckPhoneNum('inputNum', 'output')" value="Check.">
+<p/>
+<div id="output" class="valid"></div>
+</body>
 </html>

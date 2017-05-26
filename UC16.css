@@ -1,0 +1,20 @@
+CSS:
+
+.success {
+color: black;
+font-size: 25px
+}
+
+.fail {
+color: darkgrey;
+font-size: 25px
+}
+
+.invalid {
+color: black;
+font-size: 25px;
+border-style: solid;
+border-color: firebrick;
+border-radius: 10px;
+padding: 10px;
+}
