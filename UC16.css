@@ -1,20 +1,6 @@
-CSS:
-
-.success {
-color: black;
-font-size: 25px
+h1 {
+ color: vlack;
+ border: 1px solid black;
+   font-family: "Arial", Times, serif;
 }
 
-.fail {
-color: darkgrey;
-font-size: 25px
-}
-
-.invalid {
-color: black;
-font-size: 25px;
-border-style: solid;
-border-color: firebrick;
-border-radius: 10px;
-padding: 10px;
-}
