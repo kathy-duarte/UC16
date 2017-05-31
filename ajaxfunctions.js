@@ -1,5 +1,4 @@
 
-
 /**
  * Uses AJAX to query an internet data source for zip codes
  * @param {string} zipId The element id that has the zip code
@@ -19,7 +18,7 @@ function findPhone(num) {
                 // No postal code found
                 displayPhoneNum('{ "areacode" : "none" }');
             } else {
-                console.log("We have a problem...server responded with code: " + this.status);
+                console.log("We have a problem: " + this.status);
             }
         } else {
             // Waiting for a response...
@@ -36,7 +35,7 @@ function findPhone(num) {
  */
 function displayPhoneNum(data){
     var number = JSON.parse(data);
-    if(number.country === "none") {
+    if(number.areacode === "none") {
         document.getElementById("number").className = "alert alert-warning";
         document.getElementById("number").innerHTML = "Phone number is not valid"
     } else {
